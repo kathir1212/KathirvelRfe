@@ -42,7 +42,7 @@ function AboutMe() {
           className="w-full text-center md:text-left"
         >
           <p className="text-gray-400 mb-6 text-lg font-semibold">
-            I’m a Full Stack Developer specialized in the MERN stack (MongoDB, Express.js, ReactJS, and Node.js), with a strong foundation in HTML, CSS, JavaScript, Tailwind CSS, ReactJS, NodeJS, ExpressJS, MongoDB, Mongoose and MySQL.
+            I’m a Full Stack Developer specialized in the MERN stack <span className='text-[#80ed99] '>(MongoDB, Express.js, ReactJS, and Node.js)</span>, with a strong foundation in HTML, CSS, JavaScript, Tailwind CSS, ReactJS, NodeJS, ExpressJS, MongoDB, Mongoose and MySQL.
           </p>
           <p className="text-gray-400 mb-6 text-lg font-semibold">
             I’m passionate about building user-friendly, innovative, and scalable web applications that deliver seamless user experiences. I enjoy solving real-world problems by turning ideas into functional, performant solutions.
@@ -50,7 +50,6 @@ function AboutMe() {
           <p className="text-gray-400 mb-6 text-lg font-semibold">
             Currently, I’m expanding my knowledge in web development and seeking opportunities in organizations that value creativity, innovation, and tech-driven growth.
           </p>
-          <p className="text-[#80ed99] font-bold">Let’s build something great together.</p>
         </motion.div>
       </div>
     </div>

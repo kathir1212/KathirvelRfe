@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { motion } from 'framer-motion';
-import { fadeIn } from '../animation/variants'; // ✅ Make sure this path is correct
+import { fadeIn } from '../animation/variants';
 
 function Herosection({ scrollToSection, refs }) {
   return (
@@ -50,7 +50,7 @@ function Herosection({ scrollToSection, refs }) {
           className="w-full h-auto py-8 flex justify-center gap-7 flex-wrap text-white text-[32px]"
         >
           <a
-            href="https://www.linkedin.com/in/your-profile"
+            href="https://www.linkedin.com/in/kathirvel-r-a91452188/details/experience/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-[#80ed99] transition-transform duration-300 hover:-translate-y-2"
@@ -58,7 +58,7 @@ function Herosection({ scrollToSection, refs }) {
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
           <a
-            href="https://github.com/your-username"
+            href="https://github.com/kathir1212?tab=repositories"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-[#80ed99] transition-transform duration-300 hover:-translate-y-2"
@@ -66,7 +66,7 @@ function Herosection({ scrollToSection, refs }) {
             <FontAwesomeIcon icon={faGithub} />
           </a>
           <a
-            href="mailto:your-email@example.com"
+            href="mailto:kathirvel082@gmail.com"
             className="hover:text-[#80ed99] transition-transform duration-300 hover:-translate-y-2"
           >
             <FontAwesomeIcon icon={faEnvelope} />
@@ -93,7 +93,7 @@ function Herosection({ scrollToSection, refs }) {
             download
             className="font-bold bg-[#80ed99] text-black shadow-lg rounded-lg text-sm px-5 py-2.5 mb-2"
           >
-            Download CV
+            Download CV 
           </a>
         </motion.div>
       </div>
