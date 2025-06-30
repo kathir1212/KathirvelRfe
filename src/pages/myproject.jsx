@@ -34,7 +34,7 @@ function Myproject() {
           </p>
 
           <a
-            href="https://github.com/your-username/movie-booking-app"
+            href="https://github.com/kathir1212/moviebookingfe/tree/moviebookingfe"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-black text-white px-5 py-2 rounded-lg transition"

@@ -25,7 +25,7 @@ function Header({ scrollToSection, refs }) {
         {/* Desktop Menu */}
         <div className="hidden lg:block">
           <ul className="flex flex-col gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 font-semibold">
-            {['Home', 'About', 'Skill', 'Projects', 'Contact'].map((item, index) => (
+            {['Home', 'About', 'Skills', 'Projects', 'Contact'].map((item, index) => (
               <li key={index} className="flex items-center p-1 text-lg gap-x-2 text-gray-200">
                 <button className="flex items-center" onClick={() => handleClick(refs[`${item.toLowerCase()}Ref`])}>
                   {item}
@@ -53,7 +53,7 @@ function Header({ scrollToSection, refs }) {
           {isMenuOpen && (
             <div className="absolute right-0 top-full mt-2 w-48 bg-white/80 backdrop-blur-md rounded-xl shadow-lg z-50">
               <ul className="flex flex-col gap-2 text-gray-900 font-semibold p-4">
-                {['Home', 'About', 'Skill', 'Projects', 'Contact'].map((item, index) => (
+                {['Home', 'About', 'Skills', 'Projects', 'Contact'].map((item, index) => (
                   <li key={index}>
                     <button
                       className="w-full text-left p-2 hover:bg-gray-200 rounded"

@@ -24,7 +24,7 @@ function Skill() {
         viewport={{ once: true, amount: 0.5 }}
         className="text-4xl font-bold text-center mb-12 text-white"
       >
-        My Tech Stack
+        My Skills
       </motion.h1>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-10">
