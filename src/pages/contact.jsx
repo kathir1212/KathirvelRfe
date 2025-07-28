@@ -28,7 +28,6 @@ function Contact() {
       if (res.ok) {
         setFormData({ name: '', email: '', message: '' });
 
-        // ✅ Show Flowbite modal
         const modal = document.getElementById('successModal');
         if (modal) {
           modal.classList.remove('hidden');

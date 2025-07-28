@@ -1,7 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { fadeIn } from '../animation/variants'; // ✅ Ensure this file exists
+import { fadeIn } from '../animation/variants';
 import movieimage from '../assets/myproject.png';
+import groceryimage from '../assets/Grocery.png';
+import ecommerceimage from '../assets/eccomerce.png'; // Add your Ecommerce image here
 
 function Myproject() {
   return (
@@ -17,9 +19,8 @@ function Myproject() {
         <h1 className="text-4xl font-bold text-white mb-10">My Projects</h1>
       </motion.div>
 
-      {/* Project Content */}
+      {/* Movie App Project */}
       <div className="flex flex-col mb-[10%] md:flex-row items-center justify-between mx-[10%] p-8 bg-slate-900 shadow-lg rounded-xl">
-        {/* Left Side - Text */}
         <motion.div
           variants={fadeIn('left', 0.3)}
           initial="hidden"
@@ -32,7 +33,6 @@ function Myproject() {
             A movie ticket booking web application built using the MERN stack.
             Users can browse movies, view showtimes, book seats, and pay online.
           </p>
-
           <a
             href="https://github.com/kathir1212/moviebookingfe/tree/moviebookingfe"
             target="_blank"
@@ -43,7 +43,6 @@ function Myproject() {
           </a>
         </motion.div>
 
-        {/* Right Side - Image */}
         <motion.div
           variants={fadeIn('right', 0.1)}
           initial="hidden"
@@ -51,11 +50,79 @@ function Myproject() {
           viewport={{ once: true, amount: 0.1 }}
           className="md:w-1/2 w-full mt-8 md:mt-0"
         >
-          <img
-            src={movieimage}
-            alt="Movie App Screenshot"
-            className="rounded-lg shadow-md w-full"
-          />
+          <img src={movieimage} alt="Movie App" className="rounded-lg shadow-md w-full" />
+        </motion.div>
+      </div>
+
+      {/* Grocery App Project */}
+      <div className="flex flex-col mb-[10%] md:flex-row items-center justify-between mx-[10%] p-8 bg-slate-900 shadow-lg rounded-xl">
+        <motion.div
+          variants={fadeIn('left', 0.3)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.4 }}
+          className="md:w-1/2 w-full md:pr-8"
+        >
+          <h2 className="text-3xl font-bold text-white mb-4">🛒 Grocery Delivery App</h2>
+          <p className="text-gray-400 dark:text-gray-300 mb-6 text-lg font-semibold text-justify">
+            A full-stack grocery shopping app built with the MERN stack. Users can browse
+            categories, add items to cart, and place orders. Includes admin dashboard for product
+            and order management.
+          </p>
+          <a
+            href="https://github.com/kathir1212/groceryapp"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-black text-white px-5 py-2 rounded-lg transition"
+          >
+            🔗 View on GitHub
+          </a>
+        </motion.div>
+
+        <motion.div
+          variants={fadeIn('right', 0.1)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.1 }}
+          className="md:w-1/2 w-full mt-8 md:mt-0"
+        >
+          <img src={groceryimage} alt="Grocery App" className="rounded-lg shadow-md w-full" />
+        </motion.div>
+      </div>
+
+      {/* E-commerce App Project */}
+      <div className="flex flex-col mb-[10%] md:flex-row items-center justify-between mx-[10%] p-8 bg-slate-900 shadow-lg rounded-xl">
+        <motion.div
+          variants={fadeIn('left', 0.3)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.4 }}
+          className="md:w-1/2 w-full md:pr-8"
+        >
+          <h2 className="text-3xl font-bold text-white mb-4">🛍️ E-commerce App</h2>
+          <p className="text-gray-400 dark:text-gray-300 mb-6 text-lg font-semibold text-justify">
+            A modern and responsive e-commerce website developed using the MERN stack.
+            Features include product listings, cart system, checkout with Stripe, order
+            history, and admin panel.
+          </p>
+          <a
+            href="https://github.com/kathir1212/ecommerceapp" // Replace this with your actual GitHub repo
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-black text-white px-5 py-2 rounded-lg transition"
+          >
+            🔗 View on GitHub
+          </a>
+        </motion.div>
+
+        <motion.div
+          variants={fadeIn('right', 0.1)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.1 }}
+          className="md:w-1/2 w-full mt-8 md:mt-0"
+        >
+          <img src={ecommerceimage} alt="E-commerce App" className="rounded-lg shadow-md w-full" />
         </motion.div>
       </div>
     </div>
