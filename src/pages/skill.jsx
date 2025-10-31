@@ -1,12 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import javascript from '../assets/js.png';
 import { fadeIn } from '../animation/variants'; // ✅ make sure path is correct
 
 function Skill() {
   const skills = [
     { name: 'HTML5', img: 'https://cdn.worldvectorlogo.com/logos/html-1.svg' },
     { name: 'CSS3', img: 'https://cdn.worldvectorlogo.com/logos/css-3.svg' },
-    { name: 'JavaScript', img: 'https://cdn.worldvectorlogo.com/logos/logo-javascript.svg' },
+    { name: 'JavaScript', img: javascript },
     { name: 'MongoDB', img: 'https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg' },
     { name: 'Express.js', img: 'https://www.pngfind.com/pngs/m/136-1363736_express-js-icon-png-transparent-png.png' },
     { name: 'React.js', img: 'https://cdn.worldvectorlogo.com/logos/react-2.svg' },
